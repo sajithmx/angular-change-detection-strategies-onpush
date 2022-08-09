@@ -18,6 +18,7 @@ export class Child1Component implements OnInit {
   }
 
   onClick() {
+    console.log('\n');
     console.log('Child 1 - onClick');
   }
 }

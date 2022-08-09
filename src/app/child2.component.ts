@@ -5,9 +5,10 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   template: `
     Child 2
     <button (click)="onClick()">Child 2</button>
+    --->
+    <app-child22></app-child22>
   `,
   styles: [``],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class Child2Component implements OnInit {
   constructor() {}
@@ -19,6 +20,7 @@ export class Child2Component implements OnInit {
   }
 
   onClick() {
+    console.log('\n');
     console.log('Child 2 - onClick');
   }
 }
